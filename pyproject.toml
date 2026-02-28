@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "devstarter"
+version = "0.1.0"
+authors = ["Samson O.O. <samsonolaide15@gmail.com>"]
+description = "DevStarter is a FastAPI backend scaffold generator"
+packages = [{ include = "devstarter" }]
+
+[tool.poetry.scripts]
+devstarter = "devstarter.cli.app:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110"
+typer = "^0.9"
+jinja2 = "^3.1"
+pydantic = "^2.0"
